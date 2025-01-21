@@ -107,19 +107,19 @@ export default App;
 
 ## Props
 
-| Prop                | Type              | Default     | Description                                      |
-| :------------------ | :---------------- | :---------- | :----------------------------------------------- |
-| isOpen              | `boolean`         | required    | Controls the visibility of the bottom sheet      |
-| onClose             | `() => void`      | required    | Callback function when bottom sheet is closed    |
-| children            | `React.ReactNode` | required    | Content to be rendered inside the bottom sheet   |
-| initialHeight       | `number`          | `50`        | Initial height of the bottom sheet in percentage |
-| backdropColor       | `string`          | `'#000000'` | Color of the backdrop overlay                    |
-| backdropOpacity     | `number`          | `0.5`       | Opacity of the backdrop overlay (0-1)            |
-| borderRadius        | `number`          | `20`        | Border radius of the bottom sheet in pixels      |
-| dragAreaColor       | `string`          | `'#000000'` | Color of the drag handle area                    |
-| dragIconColor       | `string`          | `'#ffffff'` | Color of the drag handle icon                    |
-| closeOnOverlayClick | `boolean`         | `true`      | Whether clicking the overlay closes the sheet    |
-| snapPoints          | `number[]`        | `[]`        | Array of snap points in percentage for dragging  |
+## Props
+
+| Prop            | Type              | Default     | Description                                      | Required/Optional |
+| :-------------- | :---------------- | :---------- | :----------------------------------------------- | :---------------- |
+| isOpen          | `boolean`         | required    | Controls the visibility of the bottom sheet      | Required          |
+| onClose         | `() => void`      | required    | Callback function when bottom sheet is closed    | Required          |
+| children        | `React.ReactNode` | required    | Content to be rendered inside the bottom sheet   | Required          |
+| initialHeight   | `number`          | `50`        | Initial height of the bottom sheet in percentage | Optional          |
+| backdropColor   | `string`          | `'#000000'` | Color of the backdrop overlay                    | Optional          |
+| backdropOpacity | `number`          | `0.5`       | Opacity of the backdrop overlay (0-1)            | Optional          |
+| borderRadius    | `number`          | `20`        | Border radius of the bottom sheet in pixels      | Optional          |
+| dragAreaColor   | `string`          | `'#000000'` | Color of the drag handle area                    | Optional          |
+| dragIconColor   | `string`          | `'#ffffff'` | Color of the drag handle                         | Optional          |
 
 ## License
 
