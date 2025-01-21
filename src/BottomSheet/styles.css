@@ -1,0 +1,91 @@
+.bottom-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 50ms linear;
+}
+
+.bottom-sheet.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  opacity: 0;
+  z-index: 1500;
+  transition: opacity 300ms linear;
+}
+
+.bottom-sheet .content {
+  height: 0vh;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 1150px;
+  background: #c5c5c5;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 1501;
+}
+
+.bottom-sheet.show .content {
+  transform: translateY(0%);
+}
+
+.bottom-sheet.dragging .content {
+  transition: none;
+}
+
+.bottom-sheet.fullscreen .content {
+  border-radius: 0;
+  transition: border-radius 0.3s linear;
+}
+
+.bottom-sheet .content .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-sheet .content .header .drag-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-sheet .content .header .drag-icon {
+  padding: 15px;
+  cursor: grab;
+  user-select: none;
+}
+
+.bottom-sheet .content .header .drag-icon span {
+  height: 4px;
+  width: 40px;
+  display: block;
+  border-radius: 50px;
+}
+
+.bottom-sheet .content .bottom-sheet-body {
+  overflow-y: auto;
+}
+
+.bottom-sheet .content .bottom-sheet-body::-webkit-scrollbar {
+  width: 0;
+}
