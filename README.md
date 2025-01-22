@@ -33,7 +33,7 @@ yarn add zero-dependency-bottom-sheet
 ```jsx
 import React, { useState } from "react";
 import "./App.css";
-import BottomSheet from "zero-dependency-bottom-sheet";
+import { BottomSheet } from "zero-dependency-bottom-sheet";
 
 const App: React.FC = () => {
   const [isSheetVisible, setIsSheetVisible] = useState(false);
