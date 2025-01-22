@@ -5,13 +5,13 @@ A lightweight, customizable React bottom sheet component with zero dependencies.
 ## Installation
 
 ```bash
-npm install zero_dependency_bottom_sheet
+npm install zero-dependency-bottom-sheet
 ```
 
 OR
 
 ```bash
-yarn add zero_dependency_bottom_sheet
+yarn add zero-dependency-bottom-sheet
 ```
 
 ## Features
@@ -83,12 +83,6 @@ const App: React.FC = () => {
             >
               Close the sheet
             </button>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-              quisquam rem laborum adipisci voluptate deleniti officiis alias
-              minima perspiciatis, nostrum quibusdam! Doloribus nam obcaecati
-              blanditiis ducimus quasi optio aliquid aspernatur.
-            </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
               quisquam rem laborum adipisci voluptate deleniti officiis alias
