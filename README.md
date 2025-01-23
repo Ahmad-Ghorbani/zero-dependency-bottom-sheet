@@ -61,6 +61,7 @@ const App: React.FC = () => {
         dragIconColor={"red"}
         closeOnOverlayClick={true}
         snapPoints={[25, 120]}
+        backgroundColor="red"
       >
         <BottomSheet.Header>
           <div
