@@ -13,7 +13,8 @@ interface BottomSheetProps {
   dragAreaColor?: string;
   dragIconColor?: string;
   closeOnOverlayClick?: boolean;
-  snapPoints?: number[]; // Define snapping positions during dragging
+  snapPoints?: number[];
+  backgroundColor?: string;
 }
 
 const BottomSheet: React.FC<BottomSheetProps> & {
@@ -31,6 +32,7 @@ const BottomSheet: React.FC<BottomSheetProps> & {
   dragIconColor = "#000",
   closeOnOverlayClick = true,
   snapPoints,
+  backgroundColor = "#FFF",
 }) => {
   const {
     isDragging,
@@ -113,6 +115,7 @@ const BottomSheet: React.FC<BottomSheetProps> & {
           style={{
             overflowY: "scroll",
             height: `calc(100vh - ${headerHeight}px)`,
+            backgroundColor: backgroundColor,
           }}
           ref={bottomSheetBodyRef}
         >

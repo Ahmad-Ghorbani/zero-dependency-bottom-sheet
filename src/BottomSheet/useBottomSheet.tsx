@@ -2,7 +2,6 @@ import useWorker from "./useWorker";
 import useDirection from "./useDirection";
 import useDragging from "./useDragging";
 import useContentRef from "./useContentRef";
-import useInitialHeight from "./useInitialHeight";
 
 interface UseBottomSheetProps {
   onClose: () => void;
@@ -21,21 +20,21 @@ function useBottomSheet({
 
   const { turningPoint } = useDirection({ height });
 
-  const { maxHeight, bottomSheetBodyRef } = useInitialHeight({
-    isOpen,
-    initialHeight,
-    setHeight,
-    startSpringAnimation,
-  });
-
-  const { handleDragStart, isDragging, dragRef, headerHeight } = useDragging({
+  const {
+    handleDragStart,
+    isDragging,
+    dragRef,
+    headerHeight,
+    bottomSheetBodyRef,
+  } = useDragging({
     height,
     setHeight,
-    maxHeight,
     onClose,
     turningPoint,
     startSpringAnimation,
     snapPoints,
+    isOpen,
+    initialHeight,
   });
 
   const { contentRef } = useContentRef({ headerHeight, height, onClose });
