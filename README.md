@@ -104,20 +104,22 @@ export default App;
 
 ## Props
 
-| Prop                | Type              | Default     | Description                                              | Required/Optional |
-| :------------------ | :---------------- | :---------- | :------------------------------------------------------- | :---------------- |
-| isOpen              | `boolean`         | required    | Controls the visibility of the bottom sheet              | Required          |
-| onClose             | `() => void`      | required    | Callback function when bottom sheet is closed            | Required          |
-| children            | `React.ReactNode` | required    | Content to be rendered inside the bottom sheet           | Required          |
-| initialHeight       | `number`          | `50`        | Initial height of the bottom sheet in percentage         | Optional          |
-| backdropColor       | `string`          | `'#000000'` | Color of the backdrop overlay                            | Optional          |
-| backdropOpacity     | `number`          | `0.5`       | Opacity of the backdrop overlay (0-1)                    | Optional          |
-| borderRadius        | `number`          | `20`        | Border radius of the bottom sheet in pixels              | Optional          |
-| dragAreaColor       | `string`          | `'#000000'` | Color of the drag handle area                            | Optional          |
-| dragIconColor       | `string`          | `'#ffffff'` | Color of the drag handle                                 | Optional          |
-| closeOnOverlayClick | `boolean`         | `true`      | Close the bottom sheet when overlay is clicked           | Optional          |
-| snapPoints          | `number[]`        | `undefined` | Define snapping positions during dragging                | Optional          |
-| backgroundColor     | `string`          | `'#ffffff'` | Background color of the content part of the bottom sheet | Optional          |
+## Props
+
+| Prop                | Type              | Default     | Description                                                                                 | Required/Optional |
+| :------------------ | :---------------- | :---------- | :------------------------------------------------------------------------------------------ | :---------------- |
+| isOpen              | `boolean`         | required    | Controls the visibility of the bottom sheet                                                 | Required          |
+| onClose             | `() => void`      | required    | Callback function when bottom sheet is closed                                               | Required          |
+| children            | `React.ReactNode` | required    | Content to be rendered inside the bottom sheet                                              | Required          |
+| initialHeight       | `number`          | `50`        | Initial height of the bottom sheet in percentage (values greater than 85 will be set to 85) | Optional          |
+| backdropColor       | `string`          | `'#000000'` | Color of the backdrop overlay                                                               | Optional          |
+| backdropOpacity     | `number`          | `0.5`       | Opacity of the backdrop overlay (0-1)                                                       | Optional          |
+| borderRadius        | `number`          | `20`        | Border radius of the bottom sheet in pixels                                                 | Optional          |
+| dragAreaColor       | `string`          | `'#000000'` | Color of the drag handle area                                                               | Optional          |
+| dragIconColor       | `string`          | `'#ffffff'` | Color of the drag handle                                                                    | Optional          |
+| closeOnOverlayClick | `boolean`         | `true`      | Close the bottom sheet when overlay is clicked                                              | Optional          |
+| snapPoints          | `number[]`        | `undefined` | Define snapping positions during dragging (values greater than 85 will be set to 85)        | Optional          |
+| backgroundColor     | `string`          | `'#ffffff'` | Background color of the content part of the bottom sheet                                    | Optional          |
 
 ## License
 
