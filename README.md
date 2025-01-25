@@ -60,7 +60,7 @@ const App: React.FC = () => {
         dragAreaColor={"#000000"}
         dragIconColor={"red"}
         closeOnOverlayClick={true}
-        snapPoints={[25, 120]}
+        snapPoints={[25, 60]}
         backgroundColor="red"
       >
         <BottomSheet.Header>
